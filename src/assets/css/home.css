@@ -19,7 +19,7 @@
 .cabecera{
   width: 100%;
   height: 150px;
-  background-image: url('public/img/Header.jpg');
+  background-image: url('public/Header.jpg');
   background-size: cover;
   background-position: center;
   color:#ddd ;
