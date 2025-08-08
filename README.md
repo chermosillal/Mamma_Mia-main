@@ -1,5 +1,8 @@
 ## A continuación se detallan los Commits por Hitos
 
+***HITO8 PRUEBA MODULO***
+Hasta el Commits on Ago 08, 2025, corresponde al Hito8
+
 ***HITO7***
 Hasta el Commits on Jul 13, 2025, corresponde al Hito7
 
