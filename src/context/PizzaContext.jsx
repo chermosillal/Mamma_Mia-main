@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { PizzaContext } from './PizzaContextDef';
 
 export const PizzaProvider = ({ children }) => {
@@ -26,5 +26,3 @@ export const PizzaProvider = ({ children }) => {
     </PizzaContext.Provider>
   );
 };
-
-export const usePizzas = () => useContext(PizzaContext);
