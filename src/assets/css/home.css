@@ -1,0 +1,80 @@
+.cabecera::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+.marco{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px;
+}
+.cabecera{
+  width: 100%;
+  height: 150px;
+  background-image: url('public/img/Header.jpg');
+  background-size: cover;
+  background-position: center;
+  color:#ddd ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  align-items: center; 
+  text-align: center;
+}
+.cabecera * {
+    position: relative; /* Asegura que el contenido del div esté encima de la capa */
+    z-index: 2;
+}
+
+h1 {
+    padding: 0;
+    margin: 0;
+    font-size: 40px;
+}
+.refran{
+    padding: 0;
+    margin: 0;
+    font-size: 13px;
+}
+
+.productos{
+    margin-top: 15px;
+    margin-bottom: 5px;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+.boton{
+  width: 60%;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #007bff; /* Azul */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3; /* Azul más oscuro al pasar el mouse */
+}
+a {
+  font-weight: 500;
+  color: #fff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #93d5e5;
+}

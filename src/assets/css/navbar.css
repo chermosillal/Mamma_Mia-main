@@ -1,0 +1,174 @@
+/* Estilos generales */
+.navbar {
+    display: flex;
+    flex-direction: row;
+    background-color: #000;
+    padding: 0px 10px;
+    align-items: center;
+}
+
+/* Contenedor principal */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+}
+
+/* Ocultar el botón hamburguesa en escritorio */
+.hamburger {
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+  background: none;
+  border: none;
+  display: none; /* Oculto por defecto */
+}
+/* Título alineado completamente a la izquierda */
+.title {
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  margin: 0;
+  text-align: left;
+  flex-shrink: 0;
+}
+
+/* Botón de menú tipo hamburguesa */
+.hamburger {
+  font-size: 25px;
+  color: white;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:#444;
+  width: 65px; /* Tamaño uniforme */
+  height: 15px; /* Tamaño uniforme */
+  /* border: 1px solid #ccc; Borde celeste */
+  border-radius: 5%;
+  padding: 5px;
+}
+.nav-links a:hover {
+  background-color: #666; /* Color más claro al pasar el mouse */
+  transform: scale(1.1); /* Pequeño aumento de tamaño */
+  border-color: #fff; /* Cambio de borde */
+  box-shadow: 0px 0px 4px goldenrod;
+}
+
+/* Total alineado a la derecha */
+.total {
+  color: #00C8FF; /* Celeste brillante */
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 140px; /* Tamaño uniforme */
+  height: 20px; /* Tamaño uniforme */
+  border-radius: 5%; /* Hace el borde completamente redondo */
+  padding: 5px;
+  white-space: nowrap;
+  background-color: #000;
+}
+.total:hover {
+  background-color: #000; 
+  color: goldenrod
+}
+/* --------------------------------------------------------- */
+
+
+/*  Estilos para TABLETS (768px - 1024px) */
+
+@media (max-width: 1024px) {
+  .navbar {
+    flex-direction: column;
+    padding: 10px 15px;
+    align-items: center;
+  }
+
+  .nav-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .title {
+    font-size: 18px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .nav-links {
+    flex-direction: row;
+    gap: 12px;
+    justify-content: center;
+  }
+
+  .total {
+    text-align: center;
+    width: 50%;
+
+  }
+}
+
+/* --------------------------------------------------------- */
+
+
+/* Estilos para dispositivos móviles */
+
+@media (max-width: 768px) {
+  /* Ocultar título en móviles */
+  .title {
+    display: none;
+  }
+  .nav-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar {
+    display: flex;
+    flex-direction: column;
+  }
+    .hamburger {
+    display: block;
+  }
+    .total {
+    width: 100%;
+    text-align: center;
+    order: -1; /* Mueve el total arriba */
+    width: 140px; /* Tamaño uniforme */
+    height: 20px; /* Tamaño uniforme */
+    margin-top: 10px;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #000;
+    padding: 10px 0;
+    text-align: center;
+    align-items: center;
+    margin: 0;
+  }
+
+  .nav-links.active {
+    display: flex;
+    gap: 3px; /* Se muestra el menú cuando está activo */
+  }
+}

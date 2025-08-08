@@ -1,0 +1,71 @@
+/* Estilos compartidos para .login y .register */
+.login, .register {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 250px;
+  margin-bottom: 20px;
+}
+
+.input-container {
+  position: relative;
+  width: 100%;
+}
+
+.login input, .register input {
+  width: 100%;
+  padding: 10px;
+  padding-left: 35px; /* Espacio para el ícono */
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+/* Estilos compartidos para iconos */
+.login i, .register i {
+  position: absolute;
+  left: 10px;
+  top: 40%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #666;
+}
+button {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #007bff; /* Azul */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3; /* Azul más oscuro al pasar el mouse */
+}
+
+/* -----------------------------------------------------------
+Usamos estilos para la ventana emergente */
+
+.swal-title {
+  font-size: 14px;
+  font-weight: bold;
+  color: #ff5733; /* Naranja pizza 🍕 */
+}
+
+.swal-content {
+  font-size: 12px;
+  color: #444;
+}
+
+.swal-button {
+  background-color: #c0392b; /* Rojo oscuro */
+  color: white;
+  padding: 12px;
+  border-radius: 5px;
+  font-size: 8px;
+}
+
+.swal-button:hover {
+  background-color: #e74c3c;
+}

@@ -1,0 +1,93 @@
+.cart{    /* Tarjeta de productos con Flex */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    width: 350px;
+    height: auto;
+    min-height: 300px;
+    background-color: #fff;
+    padding: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+    box-shadow: 0px 0px 20px grey;
+    border-radius: 5px;
+}
+
+
+.lista{
+  display: flex;
+  width: 100%;
+}
+
+.lista button{
+  width: 30px;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #007bff; /* Azul */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3; /* Azul más oscuro al pasar el mouse */
+}
+
+.cart-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left; /* Asegura que los textos estén alineados a la izquierda */
+}
+
+.cart-table td {
+  padding: 10px;
+  border: none; /* Elimina los bordes */
+}
+
+.cart-table td:nth-child(2) { /* Segunda columna (nombre) */
+  text-align: left; /* Alinea el texto a la izquierda */
+  width: 100%; /* Ocupa el espacio disponible */
+}
+
+.cart-table td:nth-child(5), /* Columna de cantidad */
+.total-container {
+  text-align: left;
+}
+.suma{
+  font-size: 24px;
+  font-weight:600;
+}
+
+.foto2 {
+  width: 50px;
+  height: auto;
+}
+
+/* -----------------------------------------------------------
+Usamos estilos para la ventana emergente */
+
+.swal-title {
+  font-size: 14px;
+  font-weight: bold;
+  color: #ff5733; /* Naranja pizza 🍕 */
+}
+
+.swal-content {
+  font-size: 12px;
+  color: #444;
+}
+
+.swal-button {
+  background-color: #c0392b; /* Rojo oscuro */
+  color: white;
+  padding: 12px;
+  border-radius: 5px;
+  font-size: 8px;
+}
+
+.swal-button:hover {
+  background-color: #e74c3c;
+}

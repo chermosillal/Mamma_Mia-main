@@ -1,0 +1,9 @@
+#root {
+  width: 90vw; /* Que ocupe el 90% del ancho visible */
+  max-width: 1280px; /* Sigue limitando el máximo */
+  min-width: 320px; /* Evita que se haga demasiado pequeño */
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+
